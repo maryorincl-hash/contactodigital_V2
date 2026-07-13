@@ -23,6 +23,9 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 #progress{position:fixed;top:0;left:0;height:4px;background:var(--accent);transition:width .4s ease;z-index:100}
+#logo-corner{position:fixed;top:14px;right:20px;height:26px;z-index:90;pointer-events:none;display:none}
+#brand-row{position:fixed;display:flex;align-items:center;gap:14px;z-index:100;pointer-events:none}
+#logo-sais{height:38px}
 .slide{
   position:absolute;
   inset:0;
@@ -201,7 +204,9 @@ body{background:#FFD000;color:#0A0A0A;}
 [style*="border:2px solid rgba(255,255,255"]{border-color:rgba(0,0,0,.15)!important}
 .modal-box [style*="color:#fff"]{color:#fff!important}
 .proto-num[style*="color:#fff"]{color:#fff!important}
+.crisp-letter[style*="color:#fff"]{color:#fff!important}
 .modal-box [style*="color:rgba(255,255,255"]{color:rgba(255,255,255,.7)!important}
+.modal-box [style*="color:var(--am-mint)"]{color:#fff!important}
 @media (max-width:1024px){.cols4{grid-template-columns:1fr 1fr !important}}
 @media (max-width:767px){
   .slide{overflow-y:auto !important;-webkit-overflow-scrolling:touch;padding:16px 4vw 78px !important}
@@ -269,15 +274,22 @@ table td[style*="color:var(--orange)"]{color:#C41E2A!important;font-weight:800!i
 </head>
 <body>
 <div id="progress"></div>
+<img id="logo-corner" src="cerrador-digital-logo-chico.png" alt="Cerrador Digital del Rally 2026">
 <div id="presentation">
 
-<div class="slide s-cover active" id="s1">
+<div class="slide s-cover active" id="s1" style="flex-direction:row;align-items:center;gap:4vw">
   <div class="cov-deco"></div>
-  <p style="font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--am-mint);margin-bottom:10px">Americar Equipo Comercial 2026</p>
-  <h1 style="font-size:clamp(38px,6vw,76px);font-weight:900;line-height:1.05;letter-spacing:-2px;margin-bottom:14px">EL CERRADOR<br><span style="color:var(--am-mint)">DIGITAL</span> <span style="color:#0A0A0A;font-weight:900">:)</span></h1>
-  <p style="font-size:clamp(13px,1.5vw,18px);color:var(--light);max-width:620px;line-height:1.5;margin-bottom:10px">De receptor de leads a Cerrador de Alto Valor:<br><strong style="color:#fff">Maximizando la conversión a citas y el margen del negocio</strong></p>
-  <p style="font-size:12px;color:var(--am-mint);letter-spacing:2px;font-weight:700">Usados &nbsp;|&nbsp; VPP &nbsp;|&nbsp; Financiamiento &nbsp;|&nbsp; Seguros</p>
-  <div class="badge-row" style="justify-content:flex-start;margin-top:20px"><span class="badge">CRM Llaima</span><span class="badge">Protocolo CRISP</span><span class="badge">Primer Contacto Efectivo</span></div>
+  <div style="flex:1;min-width:0;position:relative;z-index:1">
+    <p style="font-size:14px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--am-mint);margin-bottom:10px">Americar Equipo Comercial 2026</p>
+    <img src="cerrador-digital-del-rally-2026.png" alt="Cerrador Digital del Rally 2026" style="width:clamp(336px,50vw,672px);height:auto;display:block;margin-bottom:14px">
+    <p style="font-size:clamp(13px,1.5vw,18px);color:var(--light);max-width:620px;line-height:1.5;margin-bottom:10px">De receptor de leads a Cerrador de Alto Valor:<br><strong style="color:#fff">Maximizando la conversión a citas y el margen del negocio</strong></p>
+    <p style="font-size:12px;color:var(--am-mint);letter-spacing:2px;font-weight:700">Usados &nbsp;|&nbsp; VPP &nbsp;|&nbsp; Financiamiento &nbsp;|&nbsp; Seguros</p>
+    <div class="badge-row" style="justify-content:flex-start;margin-top:20px"><span class="badge">CRM Llaima</span><span class="badge">Protocolo CRISP</span><span class="badge">Primer Contacto Efectivo</span></div>
+  </div>
+  <div style="flex:1;min-width:0;display:flex;justify-content:center;align-items:center;position:relative;z-index:1">
+    <img src="cerrador-digital-capacitacion.png" alt="Equipo Disfruta el Viaje, superhéroes del Cerrador Digital" style="width:auto;max-width:100%;max-height:min(69vh,546px);object-fit:contain;margin-top:6vh">
+  </div>
+  <img src="banderines.png" alt="Banderines de carrera" style="position:absolute;right:1vw;bottom:0px;height:min(26vh,192px);width:auto;object-fit:contain;z-index:0;pointer-events:none">
 </div>
 
 <div class="slide s-navy" id="s-index" style="justify-content:flex-start;padding-top:3vh">
@@ -311,7 +323,7 @@ table td[style*="color:var(--orange)"]{color:#C41E2A!important;font-weight:800!i
     <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:13px 15px">
       <p style="font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:8px">04 · Protocolo de cierre</p>
       <ul style="list-style:none;display:flex;flex-direction:column;gap:5px">
-        <li style="font-size:12px;color:var(--light);display:flex;gap:7px"><span style="color:var(--green);font-weight:700;flex-shrink:0">→</span>Los 10 pasos del Cerrador Americar</li>
+        <li style="font-size:12px;color:var(--light);display:flex;gap:7px"><span style="color:var(--green);font-weight:700;flex-shrink:0">→</span>Casos de éxito y sus recomendaciones</li>
         <li style="font-size:12px;color:var(--light);display:flex;gap:7px"><span style="color:var(--green);font-weight:700;flex-shrink:0">→</span>El guión de oro del primer contacto</li>
         <li style="font-size:12px;color:var(--light);display:flex;gap:7px"><span style="color:var(--green);font-weight:700;flex-shrink:0">→</span>Técnica de alto valor + WhatsApp y gancho de reserva</li>
       </ul>
@@ -554,7 +566,7 @@ table td[style*="color:var(--orange)"]{color:#C41E2A!important;font-weight:800!i
     </div>
   </div>
   <p class="src" style="margin-top:8px">Harvard Business Review (Harvard Business School) · Auditoría de millones de leads en miles de empresas: el interés del comprador digital cae 80% tras los 5 min; llamar en la 1ª hora da 7× más probabilidad de avanzar el negocio. · XANT Research 2026 (ex InsideSales.com) · +15.000 leads / +100.000 llamadas analizadas; probabilidad de contacto cae −400% sin llamar antes de los 5 min. · Car Wars 2025 (Crisp Benchmark) · Plataforma líder en auditoría telefónica automotriz: analizó 48M llamadas en ~3.000 concesionarios; el 62% de los prospectos se pierde por falta de seguimiento. · NSEA / Demand Local 2025 · 80% de ventas de usados requieren 5+ llamadas de seguimiento.</p>
-</div><div class="slide s-navy2" id="s10" style="justify-content:flex-start;padding-top:4vh"><div class="tag">Estrategia de contacto inmediato</div><h2 class="h1">Los primeros <span class="g">5 minutos</span> definen tu comisi&oacute;n</h2><div style="display:grid;grid-template-columns:1fr 1.6fr 1fr;gap:16px;margin-top:12px;align-items:stretch"><div class="card" style="padding:16px;position:relative"><div style="position:absolute;top:-11px;left:14px;background:var(--gray);color:#000;font-weight:900;font-size:10px;padding:2px 10px;border-radius:50px">MINUTO 1</div><div style="font-size:22px;margin:10px 0 8px;text-align:center">&#128242;</div><h3 style="color:var(--light);font-size:12px;margin-bottom:6px">WhatsApp Autom&aacute;tico (Paula IA)</h3><p style="font-size:12px;color:var(--gray);line-height:1.5">Entrega la ficha t&eacute;cnica del usado cotizado y avisa que el Cerrador Oficial llamar&aacute; con una propuesta de financiamiento a medida.</p><p style="margin-top:8px;font-size:11px;font-weight:700;color:var(--gray)">ROL: Preparar el terreno</p></div><div class="card ct" style="padding:18px;position:relative;border-width:2px"><div style="position:absolute;top:-13px;left:14px;background:var(--teal);color:#0c3828;font-weight:900;font-size:11px;padding:3px 14px;border-radius:50px">&#11088; MINUTO 5 &mdash; CLAVE</div><div style="font-size:28px;margin:10px 0 10px;text-align:center"><span class="phone-ring"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36"><rect x="12" y="4" width="28" height="46" rx="5" ry="5" fill="#1A1A1A" stroke="#0A0A0A" stroke-width="2.5"/><rect x="15" y="10" width="22" height="30" rx="2" fill="#333333" opacity="0.18"/><circle cx="26" cy="44" r="2.2" fill="#0A0A0A"/><rect x="21" y="6.5" width="10" height="1.8" rx="1" fill="#0A0A0A"/><path d="M20 18 q3-3 6 0 l-2 4 q-1 0-1 1 l0 6 q0 1 1 1 l4-2 q3 3 0 6 q-8 4-12-10 q-2-5 4-6z" fill="#e63946" stroke="#fff" stroke-width="0.5"/></svg></span></div><h3 style="color:var(--teal);font-size:13px;margin-bottom:8px">La Llamada de Cierre</h3><p style="font-size:12.5px;color:var(--light);line-height:1.5">El cliente ya sabe qui&eacute;n eres. Tu objetivo: capturar su atenci&oacute;n, detectar el VPP, activar el financiamiento y <strong style="color:#fff">vender agresivamente la visita.</strong></p><p style="margin-top:10px;font-size:12px;font-weight:700;color:var(--teal)">ROL: Agendar + Empaquetar el negocio</p></div><div class="card" style="padding:14px;position:relative"><div style="position:absolute;top:-11px;left:14px;background:var(--orange);color:#0c3828;font-weight:900;font-size:10px;padding:2px 10px;border-radius:50px">M&Aacute;X. 15 MIN</div><div style="font-size:20px;margin:10px 0 5px;text-align:center">&#128172;</div><h3 style="color:var(--light);font-size:12px;margin-bottom:5px">WhatsApp Seguimiento</h3><p style="font-size:11.5px;color:var(--gray);line-height:1.4;margin-bottom:8px">Solo si no contest&oacute; la llamada. Mensaje corto que genere curiosidad y urgencia.</p><div style="border-top:1px solid rgba(255,255,255,.08);padding-top:7px"><p style="font-size:10px;font-weight:700;color:var(--orange);margin-bottom:5px;text-transform:uppercase;letter-spacing:.5px">Tu perfil debe mostrar:</p><ul style="list-style:none;display:flex;flex-direction:column;gap:3px"><li style="font-size:11px;color:var(--light);display:flex;gap:5px"><span style="color:var(--green)">&#10003;</span><span><strong style="color:#fff">Foto corporativa</strong> — no fotos personales ni de fiestas</span></li><li style="font-size:11px;color:var(--light);display:flex;gap:5px"><span style="color:var(--green)">&#10003;</span><span><strong style="color:#fff">WhatsApp Business</strong> activado con nombre y cargo</span></li><li style="font-size:11px;color:var(--light);display:flex;gap:5px"><span style="color:var(--green)">&#10003;</span><span>Descripci&oacute;n: <strong style="color:#fff">"Asesor Comercial · Americar"</strong></span></li><li style="font-size:11px;color:var(--light);display:flex;gap:5px"><span style="color:var(--green)">&#10003;</span><span>Horario y mensaje autom&aacute;tico de ausencia configurados</span></li></ul></div><p style="margin-top:7px;font-size:11px;font-weight:700;color:var(--gray)">ROL: Rescatar e infundir confianza</p></div></div><div style="margin-top:12px;background:rgba(61,217,160,.07);border-left:3px solid var(--teal);border-radius:0 8px 8px 0;padding:10px 16px"><p style="font-size:12px;color:var(--light)">&#128161; Si no logras llamar en los primeros 5 minutos, no abandones: reintenta en las <strong style="color:#fff">horas de mayor conversi&oacute;n:</strong> <strong style="color:var(--teal)">16:00&ndash;17:00</strong> es la mejor hora del d&iacute;a &mdash; segunda opci&oacute;n: <strong style="color:var(--teal)">11:00&ndash;12:00</strong> antes del almuerzo.</p></div></div><div class="slide s-navy" id="s11" style="justify-content:flex-start;padding-top:3vh"><div class="tag">Estrategia de ejecuci&oacute;n</div><h2 class="h1" style="margin-bottom:10px">Los <span class="t">10 pasos</span> del Cerrador Americar</h2><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px 24px"><div class="steps"><div class="step" style="border-color:var(--teal)"><div class="step-n" style="background:var(--teal);color:#0c3828">1</div><div class="step-t"><strong>Bienvenida:</strong> Profesional, con fuerza y claridad. Nombre + Americar.</div></div><div class="step" style="border-color:var(--teal)"><div class="step-n" style="background:var(--teal);color:#0c3828">2</div><div class="step-t"><strong>Saludo con sonrisa:</strong> Proyecta alta energ&iacute;a y entusiasmo inmediato.</div></div><div class="step" style="border-color:var(--teal)"><div class="step-n" style="background:var(--teal);color:#0c3828">3</div><div class="step-t"><strong>Empat&iacute;a:</strong> Conecta genuinamente con su proyecto de cambiar o adquirir su auto.</div></div><div class="step" style="border-color:var(--orange)"><div class="step-n" style="background:var(--orange);color:#0c3828">4</div><div class="step-t"><strong>Mapeo de Intangibles:</strong> Credito convencional o inteligente?</div></div><div class="step" style="border-color:var(--orange)"><div class="step-n" style="background:var(--orange);color:#0c3828">5</div><div class="step-t"><strong>Consulta de VPP:</strong> Tengo al tasador disponible hoy.</div></div></div><div class="steps"><div class="step" style="border-color:var(--green)"><div class="step-n" style="background:var(--green);color:#0c3828">6</div><div class="step-t"><strong>Verificar datos:</strong> Asegura correo y tel&eacute;fono correctos en el CRM Llaima.</div></div><div class="step" style="border-color:var(--accent)"><div class="step-n">7</div><div class="step-t"><strong>Solicitar la Cita:</strong> Usa preguntas de control (Opci&oacute;n A o B) para amarrar el d&iacute;a.</div></div><div class="step" style="border-color:var(--accent)"><div class="step-n">8</div><div class="step-t"><strong>Seguimiento preventivo:</strong> Establece la confirmaci&oacute;n previa para asegurar la asistencia.</div></div><div class="step" style="border-color:var(--accent)"><div class="step-n">9</div><div class="step-t"><strong>Registro en Llaima:</strong> Guarda intangibles detectados: Cr&eacute;dito, Seguro, VPP.</div></div><div class="step" style="border-color:var(--am-mint)"><div class="step-n" style="background:var(--am-mint);color:#0c3828">10</div><div class="step-t"><strong>Cierre de impacto:</strong> Desp&iacute;dete con alta energ&iacute;a y expectativa positiva de la visita.</div></div></div></div></div><div class="slide s-navy" id="s12" style="justify-content:flex-start;padding-top:4vh">
+</div><div class="slide s-navy2" id="s10" style="justify-content:flex-start;padding-top:4vh"><div class="tag">Estrategia de contacto inmediato</div><h2 class="h1">Los primeros <span class="g">5 minutos</span> definen tu comisi&oacute;n</h2><div style="display:grid;grid-template-columns:1fr 1.6fr 1fr;gap:16px;margin-top:12px;align-items:stretch"><div class="card" style="padding:16px;position:relative"><div style="position:absolute;top:-11px;left:14px;background:var(--gray);color:#000;font-weight:900;font-size:10px;padding:2px 10px;border-radius:50px">MINUTO 1</div><div style="font-size:22px;margin:10px 0 8px;text-align:center">&#128242;</div><h3 style="color:var(--light);font-size:12px;margin-bottom:6px">WhatsApp Autom&aacute;tico (Paula IA)</h3><p style="font-size:12px;color:var(--gray);line-height:1.5">Entrega la ficha t&eacute;cnica del usado cotizado y avisa que el Cerrador Oficial llamar&aacute; con una propuesta de financiamiento a medida.</p><p style="margin-top:8px;font-size:11px;font-weight:700;color:var(--gray)">ROL: Preparar el terreno</p></div><div class="card ct" style="padding:18px;position:relative;border-width:2px"><div style="position:absolute;top:-13px;left:14px;background:var(--teal);color:#0c3828;font-weight:900;font-size:11px;padding:3px 14px;border-radius:50px">&#11088; MINUTO 5 &mdash; CLAVE</div><div style="font-size:28px;margin:10px 0 10px;text-align:center"><span class="phone-ring"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36"><rect x="12" y="4" width="28" height="46" rx="5" ry="5" fill="#1A1A1A" stroke="#0A0A0A" stroke-width="2.5"/><rect x="15" y="10" width="22" height="30" rx="2" fill="#333333" opacity="0.18"/><circle cx="26" cy="44" r="2.2" fill="#0A0A0A"/><rect x="21" y="6.5" width="10" height="1.8" rx="1" fill="#0A0A0A"/><path d="M20 18 q3-3 6 0 l-2 4 q-1 0-1 1 l0 6 q0 1 1 1 l4-2 q3 3 0 6 q-8 4-12-10 q-2-5 4-6z" fill="#e63946" stroke="#fff" stroke-width="0.5"/></svg></span></div><h3 style="color:var(--teal);font-size:13px;margin-bottom:8px">La Llamada de Cierre</h3><p style="font-size:12.5px;color:var(--light);line-height:1.5">El cliente ya sabe qui&eacute;n eres. Tu objetivo: capturar su atenci&oacute;n, detectar el VPP, activar el financiamiento y <strong style="color:#fff">vender agresivamente la visita.</strong></p><p style="margin-top:10px;font-size:12px;font-weight:700;color:var(--teal)">ROL: Agendar + Empaquetar el negocio</p></div><div class="card" style="padding:14px;position:relative"><div style="position:absolute;top:-11px;left:14px;background:var(--orange);color:#0c3828;font-weight:900;font-size:10px;padding:2px 10px;border-radius:50px">M&Aacute;X. 15 MIN</div><div style="font-size:20px;margin:10px 0 5px;text-align:center">&#128172;</div><h3 style="color:var(--light);font-size:12px;margin-bottom:5px">WhatsApp Seguimiento</h3><p style="font-size:11.5px;color:var(--gray);line-height:1.4;margin-bottom:8px">Solo si no contest&oacute; la llamada. Mensaje corto que genere curiosidad y urgencia.</p><div style="border-top:1px solid rgba(255,255,255,.08);padding-top:7px"><p style="font-size:10px;font-weight:700;color:var(--orange);margin-bottom:5px;text-transform:uppercase;letter-spacing:.5px">Tu perfil debe mostrar:</p><ul style="list-style:none;display:flex;flex-direction:column;gap:3px"><li style="font-size:11px;color:var(--light);display:flex;gap:5px"><span style="color:var(--green)">&#10003;</span><span><strong style="color:#fff">Foto corporativa</strong> — no fotos personales ni de fiestas</span></li><li style="font-size:11px;color:var(--light);display:flex;gap:5px"><span style="color:var(--green)">&#10003;</span><span><strong style="color:#fff">WhatsApp Business</strong> activado con nombre y cargo</span></li><li style="font-size:11px;color:var(--light);display:flex;gap:5px"><span style="color:var(--green)">&#10003;</span><span>Descripci&oacute;n: <strong style="color:#fff">"Asesor Comercial · Americar"</strong></span></li><li style="font-size:11px;color:var(--light);display:flex;gap:5px"><span style="color:var(--green)">&#10003;</span><span>Horario y mensaje autom&aacute;tico de ausencia configurados</span></li></ul></div><p style="margin-top:7px;font-size:11px;font-weight:700;color:var(--gray)">ROL: Rescatar e infundir confianza</p></div></div><div style="margin-top:12px;background:rgba(61,217,160,.07);border-left:3px solid var(--teal);border-radius:0 8px 8px 0;padding:10px 16px"><p style="font-size:12px;color:var(--light)">&#128161; Si no logras llamar en los primeros 5 minutos, no abandones: reintenta en las <strong style="color:#fff">horas de mayor conversi&oacute;n:</strong> <strong style="color:var(--teal)">16:00&ndash;17:00</strong> es la mejor hora del d&iacute;a &mdash; segunda opci&oacute;n: <strong style="color:var(--teal)">11:00&ndash;12:00</strong> antes del almuerzo.</p></div></div><div class="slide s-navy" id="s12" style="justify-content:flex-start;padding-top:4vh">
   <div class="tag">Guión Ejecutivo</div>
   <h2 class="h1">El <span class="t">guión de oro</span> del Cerrador Digital</h2>
   <div class="scr">
@@ -833,6 +845,47 @@ table td[style*="color:var(--orange)"]{color:#C41E2A!important;font-weight:800!i
     <p style="font-size:12px;color:var(--light)">Revisa tus KPIs en Llaima cada viernes. <strong style="color:#fff">El que mejora sus métricas semana a semana, es quien lidera el ranking de comisiones.</strong></p>
   </div>
 </div>
+<div class="slide s-navy2" id="s17b" style="justify-content:flex-start;padding-top:3.5vh">
+  <div class="tag">✅ Validado en terreno · Entrevistas 2026</div>
+  <h2 class="h1" style="margin-bottom:4px">Lo que enseñamos, <span class="g">ya lo hacen los mejores 🏆</span></h2>
+  <p style="font-size:12.5px;color:var(--light);margin-bottom:12px">Asesores con los mejores indicadores digitales confirman, en sus propias palabras, el mismo protocolo de esta capacitación.</p>
+  <div class="cols3" style="align-items:stretch">
+    <div class="card ct" style="padding:16px">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+        <span class="crisp-letter" style="background:var(--teal);color:#fff;border-radius:50%;font-size:14px">CR</span>
+        <p style="font-size:13px;font-weight:800;color:#fff">Carla Riquelme</p>
+      </div>
+      <ul class="check-list">
+        <li><span class="ck">→</span> ⏱️ <strong style="color:var(--teal)">Regla de los 5 minutos:</strong> prioriza el menor tiempo de contacto para no perder el entusiasmo del cliente.</li>
+        <li><span class="ck">→</span> 🖥️ <strong style="color:var(--teal)">CRM Llaima:</strong> registra cada gestión de inmediato, sin dejarla para después.</li>
+      </ul>
+    </div>
+    <div class="card co" style="padding:16px">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+        <span class="crisp-letter" style="background:var(--orange);color:#fff;border-radius:50%;font-size:14px">CS</span>
+        <p style="font-size:13px;font-weight:800;color:#fff">Cesar Saez</p>
+      </div>
+      <ul class="check-list">
+        <li><span class="ck">→</span> ⏱️ <strong style="color:var(--orange)">Regla de los 5 minutos:</strong> primer contacto rápido y escucha atenta de las necesidades del cliente.</li>
+        <li><span class="ck">→</span> 🔁 <strong style="color:var(--orange)">Persistencia:</strong> seguimiento diario hasta el cierre, no solo en el primer intento.</li>
+      </ul>
+    </div>
+    <div class="card cg" style="padding:16px">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+        <span class="crisp-letter" style="background:var(--green);color:#fff;border-radius:50%;font-size:14px">EO</span>
+        <p style="font-size:13px;font-weight:800;color:#fff">Emanuel Osses</p>
+      </div>
+      <ul class="check-list">
+        <li><span class="ck">→</span> 💬 <strong style="color:var(--green)">WhatsApp de rescate:</strong> si está con otro cliente, igual envía un mensaje inicial para no perder el primer momento.</li>
+        <li><span class="ck">→</span> 🔁 <strong style="color:var(--green)">Persistencia:</strong> mantiene el contacto aunque no respondan; nunca da por perdido un lead antes de tiempo.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="quote-box" style="margin-top:12px;background:transparent!important;border:1px solid rgba(255,255,255,.15);padding:14px 20px">
+    <blockquote style="font-size:clamp(13px,1.5vw,17px)">💬 "Mantengo el contacto enviando, como mínimo, un mensaje por WhatsApp. <strong>Esta práctica me ha permitido concretar ventas con clientes que retomaron el contacto después de varios meses.</strong>"</blockquote>
+    <cite>— Emanuel Osses, Asesor comercial</cite>
+  </div>
+</div>
 <div class="slide" id="s18" style="background:linear-gradient(135deg,#0c3828 0%,#0a2e1e 40%,#1a1a2e 100%);justify-content:flex-start;align-items:center;text-align:center;padding-top:5vh">
   <div class="cov-deco"></div>
   <p style="font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--am-mint);margin-bottom:12px">El Cerrador Digital · Americar 2026</p>
@@ -850,7 +903,7 @@ table td[style*="color:var(--orange)"]{color:#C41E2A!important;font-weight:800!i
   </div>
 </div>
 <div class="slide s-navy2" id="s19" style="justify-content:flex-start;padding:2vh 4vw 80px;align-items:stretch">
-  <div style="background:#FFFFFF;border:2px solid #0A0A0A;border-radius:14px;padding:18px 24px;display:flex;flex-direction:column;gap:12px;flex:1">
+  <div id="protocol-card" style="background:#FFFFFF;border:2px solid #0A0A0A;border-radius:14px;padding:18px 24px;display:flex;flex-direction:column;gap:12px;flex:1">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px">
       <div>
         <p style="font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--am-mint);margin-bottom:5px;font-weight:700">Anexo · Para imprimir y tener en tu escritorio</p>
@@ -896,6 +949,26 @@ table td[style*="color:var(--orange)"]{color:#C41E2A!important;font-weight:800!i
   </div>
 </div>
 
+<div class="slide" id="s-reflexion" style="justify-content:flex-start;align-items:center;text-align:center;padding-top:3.5vh">
+  <div class="tag">Cierre de la sesión · Invitación a la reflexión</div>
+  <h2 class="h1" style="margin-bottom:8px">🐯 El tigre que creía ser <span class="o">oveja</span> 🐑</h2>
+  <p style="font-size:clamp(12px,1.3vw,15px);color:var(--light);max-width:620px;margin-bottom:14px">Antes de cerrar, un minuto para pensar en quién decides ser cada vez que suena el teléfono.</p>
+  <div id="yt-facade" onclick="loadYoutube()" style="width:min(44vw,520px);aspect-ratio:16/9;border-radius:16px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.35);background:#000;position:relative;cursor:pointer">
+    <img src="https://img.youtube.com/vi/5EhzcM8Wy60/hqdefault.jpg" alt="Vista previa del video: el tigre que creía ser oveja" style="width:100%;height:100%;object-fit:cover;display:block">
+    <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.22)">
+      <div style="width:64px;height:64px;border-radius:50%;background:rgba(196,30,42,.92);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.45)">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="#fff"><path d="M8 5v14l11-7z"></path></svg>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;gap:14px;justify-content:center;margin-top:16px">
+    <img src="oveja-rebano.jpg" alt="Rebaño de ovejas" style="width:110px;height:78px;object-fit:cover;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,.25)">
+    <img src="tigre-ojos.jpg" alt="Mirada de un tigre" style="width:110px;height:78px;object-fit:cover;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,.25)">
+    <img src="tigre-caminando.jpg" alt="Tigre caminando" style="width:110px;height:78px;object-fit:cover;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,.25)">
+  </div>
+  <p style="font-size:13px;font-weight:700;margin-top:14px">¿Actúas con instinto de rebaño o con la mentalidad de un <span class="o">cazador</span>? 🐯</p>
+</div>
+
 <div class="slide" id="s-kahoot" style="justify-content:flex-start;padding-top:3vh;align-items:flex-start;text-align:left">
   <h1 style="font-size:clamp(26px,4vw,50px);font-weight:900;line-height:1.1;letter-spacing:-1px;color:#fff;margin-bottom:6px">¡Hora de evaluar lo <span style="color:#8B0000">aprendido!</span></h1>
   <p style="font-size:14px;color:rgba(0,0,0,.65);margin-bottom:20px">Escanea el QR o ingresa el PIN · <strong style="color:#fff">El más rápido y preciso gana 🏆</strong></p>
@@ -927,21 +1000,52 @@ table td[style*="color:var(--orange)"]{color:#C41E2A!important;font-weight:800!i
   <span id="ctr">1 / 19</span>
   <button onclick="next()">Siguiente &#8594;</button>
 </div>
+<div id="brand-row">
+  <img id="logo-sais" src="logo-sais-clicar.png" alt="Salazar Israel | Clicar">
+</div>
 <script>
 const slides=document.querySelectorAll('.slide');
 const total=slides.length;
 let cur=0;
 document.getElementById('progress').style.width=(1/total*100)+'%';
 document.getElementById('ctr').textContent='1 / '+total;
+function updateLogoCorner(){
+  const logo=document.getElementById('logo-corner');
+  if(cur===0){logo.style.display='none';return}
+  logo.style.display='block';
+  const card=slides[cur].id==='s19'?document.getElementById('protocol-card'):null;
+  if(card){
+    const r=card.getBoundingClientRect();
+    logo.style.top=(r.top+18)+'px';
+    logo.style.right=(window.innerWidth-r.right+20)+'px';
+  }else{
+    logo.style.top='14px';
+    logo.style.right='20px';
+  }
+}
+updateLogoCorner();
+window.addEventListener('resize',updateLogoCorner);
 function show(n){
   slides[cur].classList.remove('active');
   cur=(n+total)%total;
   slides[cur].classList.add('active');
   document.getElementById('progress').style.width=((cur+1)/total*100)+'%';
   document.getElementById('ctr').textContent=(cur+1)+' / '+total;
+  updateLogoCorner();
 }
 function next(){show(cur+1)}
 function prev(){show(cur-1)}
+function layoutBrandRow(){
+  const navEl=document.getElementById('nav');
+  const row=document.getElementById('brand-row');
+  const r=navEl.getBoundingClientRect();
+  row.style.top=r.top+'px';
+  row.style.height=r.height+'px';
+  row.style.left=(r.right+18)+'px';
+}
+window.addEventListener('load',layoutBrandRow);
+window.addEventListener('resize',layoutBrandRow);
+layoutBrandRow();
 document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowDown')next();if(e.key==='ArrowLeft'||e.key==='ArrowUp')prev()});
 async function descargarChecklist(){
   const btn=document.getElementById('btn-descarga');
@@ -1059,10 +1163,10 @@ async function descargarChecklist(){
     <p style="font-size:12px;color:var(--light);line-height:1.55;margin-bottom:14px">Las <strong style="color:#fff">5 acciones obligatorias</strong> que el cerrador debe ejecutar en cada llamada para maximizar la probabilidad de conversión:</p>
     <div style="display:flex;flex-direction:column;gap:9px">
       <div class="crisp-row"><span class="crisp-letter" style="background:var(--accent);color:#fff">C</span><div><p style="font-size:12.5px;font-weight:800;color:#fff;margin-bottom:2px">Connect — Conectar</p><p style="font-size:11.5px;color:var(--light);line-height:1.5">La llamada debe lograr una conexión real con un ser humano, superando filtros, buzones de voz o intentos fallidos.</p></div></div>
-      <div class="crisp-row"><span class="crisp-letter" style="background:var(--orange);color:#0c3828">R</span><div><p style="font-size:12.5px;font-weight:800;color:#fff;margin-bottom:2px">Request — Solicitar</p><p style="font-size:11.5px;color:var(--light);line-height:1.5">El asesor debe pedir de forma activa, clara y directa la cita de venta durante la conversación.</p></div></div>
-      <div class="crisp-row"><span class="crisp-letter" style="background:var(--teal);color:#0c3828">I</span><div><p style="font-size:12.5px;font-weight:800;color:#fff;margin-bottom:2px">Invite — Invitar</p><p style="font-size:11.5px;color:var(--light);line-height:1.5">El vendedor toma el control del diálogo y ofrece opciones de horarios específicos para la visita.</p></div></div>
-      <div class="crisp-row"><span class="crisp-letter" style="background:var(--green);color:#0c3828">S</span><div><p style="font-size:12.5px;font-weight:800;color:#fff;margin-bottom:2px">Set — Agendar</p><p style="font-size:11.5px;color:var(--light);line-height:1.5">La llamada es exitosa <strong style="color:#fff">únicamente</strong> cuando se asegura una cita firme y confirmada en la agenda del CRM.</p></div></div>
-      <div class="crisp-row"><span class="crisp-letter" style="background:var(--am-mint);color:#0c3828">P</span><div><p style="font-size:12.5px;font-weight:800;color:#fff;margin-bottom:2px">Pursue — Perseguir / Seguimiento</p><p style="font-size:11.5px;color:var(--light);line-height:1.5">Si el prospecto no contestó, se cortó la llamada o no asistió a la cita (No-Show), se activa de inmediato un protocolo insistente de rescate y reintento.</p></div></div>
+      <div class="crisp-row"><span class="crisp-letter" style="background:var(--orange);color:#fff">R</span><div><p style="font-size:12.5px;font-weight:800;color:#fff;margin-bottom:2px">Request — Solicitar</p><p style="font-size:11.5px;color:var(--light);line-height:1.5">El asesor debe pedir de forma activa, clara y directa la cita de venta durante la conversación.</p></div></div>
+      <div class="crisp-row"><span class="crisp-letter" style="background:var(--teal);color:#fff">I</span><div><p style="font-size:12.5px;font-weight:800;color:#fff;margin-bottom:2px">Invite — Invitar</p><p style="font-size:11.5px;color:var(--light);line-height:1.5">El vendedor toma el control del diálogo y ofrece opciones de horarios específicos para la visita.</p></div></div>
+      <div class="crisp-row"><span class="crisp-letter" style="background:var(--green);color:#fff">S</span><div><p style="font-size:12.5px;font-weight:800;color:#fff;margin-bottom:2px">Set — Agendar</p><p style="font-size:11.5px;color:var(--light);line-height:1.5">La llamada es exitosa <strong style="color:#fff">únicamente</strong> cuando se asegura una cita firme y confirmada en la agenda del CRM.</p></div></div>
+      <div class="crisp-row"><span class="crisp-letter" style="background:var(--am-mint);color:#fff">P</span><div><p style="font-size:12.5px;font-weight:800;color:#fff;margin-bottom:2px">Pursue — Perseguir / Seguimiento</p><p style="font-size:11.5px;color:var(--light);line-height:1.5">Si el prospecto no contestó, se cortó la llamada o no asistió a la cita (No-Show), se activa de inmediato un protocolo insistente de rescate y reintento.</p></div></div>
     </div>
   </div>
 </div>
@@ -1140,6 +1244,12 @@ async function descargarChecklist(){
 </div>
 <script>
 function openQR(){document.getElementById('qr-overlay').classList.add('open')}
+function loadYoutube(){
+  const el=document.getElementById('yt-facade');
+  el.innerHTML='<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/5EhzcM8Wy60?rel=0&modestbranding=1&autoplay=1" title="Reflexión: el cuento del tigre que creía ser oveja" style="border:0;display:block" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  el.onclick=null;
+  el.style.cursor='default';
+}
 function closeQR(){document.getElementById('qr-overlay').classList.remove('open')}
 function openCrispModal(){document.getElementById('crisp-modal').classList.add('open')}
 function closeCrispModal(){document.getElementById('crisp-modal').classList.remove('open')}
